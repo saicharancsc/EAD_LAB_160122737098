@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Applying For:</legend>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="internship" value="frontend" required> Frontend Engineering
+                    </label>
+                    <label>
+                        <input type="radio" name="internship" value="backend"> Backend Engineering
+                    </label>
+                    <label>
+                        <input type="radio" name="internship" value="fullstack"> Fullstack Development
+                    </label>
+                    <label>
+                        <input type="radio" name="internship" value="cloudcomputing"> Cloud Computing
+                    </label>
+                    <label>
+                        <input type="radio" name="internship" value="ml"> Machine Learning
+                    </label>
+                </div>
+            </fieldset>
+
+            
+
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cover-letter">Cover Letter:</label>
+                <textarea id="cover-letter" name="cover-letter" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
